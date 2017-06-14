@@ -1,0 +1,110 @@
+/*https://codepen.io/w3core/pen/EVdGoO*/
+
+html {
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+
+header {
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index:100;
+    background:rgba(8,65,92,.9);
+    padding: .5em 0.1em;
+    text-align: right;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 2em;
+    font-variant: small-caps;
+    font-family: 'Righteous', cursive;
+    color: #D8E2DC;
+    float: left;
+}
+
+@media (min-width=768px) {
+    header h1 {
+       font-size: 3em;
+    }
+}
+
+
+.icone-logo {
+    max-height: 2em;
+    float: left;
+    position: relative;
+    top: 0;
+}
+
+@media (min-width=768px) {
+    .icone-logo {
+        max-height: 3em;
+    }
+}
+
+
+
+.logo {
+    display:inline-block;
+    position:relative;
+    
+    width:12.66%;
+    max-width:11.8em;
+    letter-spacing:-.5em;
+    white-space:nowrap;
+    color:transparent;
+    overflow:hidden;
+    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAAiCAMAAADbEOPQAAAAWlBMVEUAAAABr/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4Br/4y9ToAAAAAHXRSTlMAQL9/7xAfn8/fYI8vcK9QJVnIpzb3tGlJCdeGenCNtI0AAAN9SURBVFjD7ZjpUuMwDIAd33au0hZ6LHr/19xIPlQ3lJYZZofOoj/YUiV/VmQ5QWy28LlsN+JHiod74sWPFLgv4kfKL/gd+QX/EFyOe3Myw+HtucAnbnx29xC46YYvLtd13w7+Ghv9rB8A70B+ebnvBn/FVJzidNbn3Qsa9vo5wBH2GPLkvMfZU4DvluELcN0cl7l7BvDlXA6vwKKtEDYrPmYeWnB769S1NoC1lhWmPfmmtQ9Zby/A35ZR6YH8CHa3wIcJ96ZMBVdYZJ5INNj8qxHclY3BTa9RG8uTU2L2ABBKh8jTMXtJcqBo6CdjAT8s+6XBn5dyJk2pnTV41BB6JcHPCdx4CEo5gIiREZckwNDaGHygCJMGbzJ4TCGLswPdq4XVZXDjE0i/REO/PoMPCw0NOmG39bRuVuBl1ZGWCzqBT+CyvsMEaFMOQGtjcJsjWA8y/dTnkBpUeljepIyoBD6BsugAgTKljKjp/ZPB8wg9TmvwxDnWHchCyKiOkkt/WxuDO+JBggCRjDUkYKUZTZuvA9AQc5S+UFS2voILiaOeja2YnFL0YdJcHIbSJ2pyWhuBNxFi3nqgGTmMqHV1OqNXmVvQ3TX4ewKvW3jHBUjWPbAdSohdEk/+Hgaq9XFtI3COUBWcyIhDBX32Ss8GYKgbgaBsAz5n8I2vNb5/DDwASydKvoI2rY3BI6hrcNWEdMCi2iYafepRDH7SVCBR5ytoWXZ8NONzV4RKAAtzJvrW9kjG55RxVb0wvc3no40SIDI4nkkWWnZ7q8bFVY3P7S/UEncCK9jWclqu8flGjfeNF2+0eIULcBOubs79jStflhZguaskMVkP3pJubQNIEVSJVboKh+Suwl5yhXDZODaBufec8BV4l2+TwQeQKYxLBj2WtE2U6bUN4PImMA58ihhSSOtTrhV4k+bOXILP0paOdclmy6F4s+R8AxzvKq/U1N6cqNBD7cb07Ne2HC1qjNAHvjkdKhzAxDfnMs/9GyQ3Fbn4aZgZfE/oo3vbvdMSh08+JLrU6eu7ilF0pCd7VU1rW83RBOl1p76rRHzeoZQQTvkV56IdkF+YBYPL5jyc+s8/3ez1Nxh1DZb7NtPxd19qhwMqWAbqKGvJfgwO5xfB+/1HH8sM/iVpwQG0Oxy742GnAZ4LvMov+MPy/4D7Cv5k/2bebAv4c/1j/y/QxJrPygnbMwAAAABJRU5ErkJggg==") no-repeat center left;
+    background-size:contain;
+}
+
+.btn {
+    background: transparent;
+    border: 2px solid #D8E2DC;
+    border-radius: 5px;
+    padding: 7px;
+    
+    display: inline-block;
+}
+.btn-login {
+    float: right;
+    margin-left: 1em;
+    color: #D8E2DC;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+    transition: color .5s, background-color .5s;
+   
+}
+.btn-login:hover {background:#D8E2DC; color:rgb(8,65,92);}
+.btn-login:active {opacity:.7;}
+
+.btn-login:before {
+  content:"";
+  display:inline-block;
+  width:1em;
+  height:.9em; 
+
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAUVBMVEUAAAABsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4pJ89bAAAAGnRSTlMA3etU5rMKqwaJW0hPRNAR88qUaybCgWI/MCVqoPAAAAC5SURBVBjTTZBXssMwDAOpZsmOS9or2fsfNBgqynh/RGKIIURzWqqBa6ip2ZcUgJyBkIY2Q1kns2ktMA8tXuzDJXY1EZ96Xr/zv55nJGlHZlOzIh4qNnKzhWIiIIKJwmKV1URGRHNP1cikaooueikD2cSBc3STXeURBVG8jLjdl4rNPvZKT77D3vNTRyS7wc1GpJY1Ov3tnvNxaDA3/2bhy08k9YOcGWe6c+J+PrLjRx60pQYpdWnevgG0mRAe7+n/PQAAAABJRU5ErkJggg==") no-repeat center center;
+  background-size: contain;
+  margin-right: 0.2em;
+}
+
+.btn-criar-conta {
+    float: right;
+    
+    color: #D8E2DC;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    vertical-align: middle;
+    transition: color .5s, background-color .5s;
+}
+.btn-criar-conta:hover {background:#D8E2DC; color:rgb(8,65,92);}
+.btn-criar-conta:active {opacity:.7;}
